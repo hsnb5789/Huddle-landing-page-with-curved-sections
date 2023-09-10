@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+:root {
+    /* ### Primary */
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+
+    /* ### Neutral */
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+
+    /* fonts */
+    --Open_sans: 'Open Sans', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    background-color: var(--Very-Pale-Blue);
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    width: 100vw;
+    gap: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 20px; */
+    width: 100%;
+}
+
+.container {
+    min-width: 350px;
+    /* max-width: 1440px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-block-size: -webkit-fill-available;
+}
+
+/* Top container logo and button */
+.top-container {
+    /* margin-top: 30px; */
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-container img {
+    width: 130px;
+    align-items: start;
+}
+
+.top-container button {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--Light-Pink);
+    background: 0;
+    color: var(--Light-Pink);
+}
+
+.top-container button:hover {
+    border: 1px solid var(--Light-Red);
+    color: var(--Light-Red);
+}
+
+/* Main heading and paragraph */
+.main {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.main h1 {
+    font-family: var(--Poppins);
+    font-weight: 700;
+    color: var(--Very-Dark-Cyan);
+    font-size: 28px;
+}
+
+.main p {
+    min-width: 320px;
+    max-width: 500px;
+    font-family: var(--Open_sans);
+    color: var(--Very-Dark-Cyan);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px;
+}
+
+/* Get started button */
+button.getStarted {
+    min-width: 200px;
+    width: 320px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid var(--Light-Pink);
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Blue);
+    font-family: var(--Open_sans);
+    font-weight: 600;
+    margin: 30px 0;
+    box-shadow: 0 8px 8px 2px rgba(0, 0, 0, 0.04);
+}
+
+button.getStarted:hover {
+    opacity: 0.85;
+    box-shadow: 0 6px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Mockup image resizable */
+.mockupImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.mockupImg img {
+    min-width: 300px;
+    width: 100%;
+}
+
+/* Community section */
+.communityMsg {
+    margin-top: 4rem;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    font-family: var(--Open_sans);
+}
+
+.community,
+.message {
+    gap: 1rem;
+    /* text-align: center; */
+}
+
+.community img,
+.message img {
+    width: 40px;
+}
+
+.community h1,
+.message h1 {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--Very-Dark-Cyan);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.community span {
+    color: var(--Very-Dark-Cyan);
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.message h1 span {
+    color: var(--Very-Dark-Cyan);
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    width: 60px;
+}
+
+/* all section common CSS */
+
+.grow,
+.flowingSection,
+.userSection,
+.bottomSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.grow .bg,
+.userSection .user {
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-Pale-Blue);
+    width: 100%;
+}
+
+.bg .bgImg img,
+.flowing .flowingImg img,
+.user .userImg img {
+    margin: 4rem 0;
+    width: 300px;
+}
+
+.bg .bgText,
+.flowing .flowingText,
+.user .userText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: var(--Poppins);
+}
+
+.bgText h3,
+.flowingText h3,
+.userText h3 {
+    font-weight: 700;
+}
+
+.bgText p,
+.flowingText p,
+.userText p {
+    min-width: 320px;
+    max-width: 460px;
+    font-family: var(--Open_sans);
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Grow together section */
+
+.grow .bgTop {
+    display: flex;
+    background: url("./images/bg-section-top-mobile-1.svg") no-repeat center;
+    background-size: cover;
+    margin-top: 2rem;
+    height: 200px;
+    width: 100%;
+}
+
+.grow .bgBottom {
+    background: url("./images/bg-section-bottom-mobile-1.svg") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+/* flowinging conversation section */
+
+.flowingSection .flowing {
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Your user section css */
+
+.userSection .userTop {
+    display: flex;
+    background: url("./images/bg-section-top-mobile-2.svg") no-repeat center;
+    background-size: cover;
+    margin-top: 2rem;
+    height: 200px;
+    width: 100%;
+}
+
+.userSection .userBottom {
+    background: url("./images/bg-section-bottom-mobile-2.svg") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+}
+
+/* Build your community section */
+.build {
+
+    margin: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.build h1 {
+    font-family: var(--Poppins);
+    text-align: center;
+}
+
+.build button.getStarted {
+    width: 200px;
+}
+
+/* Bottom section */
+.bottomSection .bottomBg {
+    background: url("./images/bg-footer-top-mobile.svg") no-repeat center bottom;
+    background-size: contain;
+    width: 100%;
+    height: 110px;
+}
+
+.content {
+    background: var(--Very-Dark-Cyan);
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--Very-Pale-Blue);
+    font-family: var(--Open_sans);
+}
+
+.newsLetter {
+    margin: 40px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    width: 350px;
+}
+
+.newsLetter h3 {
+    text-transform: uppercase;
+}
+
+.newsLetter p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.newsLetter form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.input input {
+    width: 300px;
+    height: 40px;
+    text-indent: 20px;
+    border-radius: 6px;
+    border: 0;
+}
+
+.input p {
+    color: var(--Light-Red);
+    display: none;
+}
+
+.active .input .p {
+    display: block;
+}
+
+.input input:hover {
+    border: 1px solid var(--Light-Red);
+    display: block;
+}
+
+.input input::placeholder {
+    font-family: var(--Open_sans);
+    font-weight: 600;
+}
+
+.subscribeBtn {
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Blue);
+}
+
+.subscribeBtn:hover {
+    opacity: 0.95;
+}
+
+.input:hover {
+    display: block;
+}
+
+.phone,
+.email {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 350px;
+    font-size: 14px;
+    padding: 20px;
+    gap: 1rem;
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+
+.icon {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.icon button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.icon button:nth-child(2) {
+    background-color: transparent;
+    color: white;
+}
+
+.icon button:hover {
+    background-color: aqua;
+    opacity: 0.8;
+}
+
+/* media section for responsive design */
+@media screen and (min-width:950px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-container {
+        justify-content: space-around;
+    }
+
+    .communityMsg {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .message h1 span {
+        width: 100%;
+    }
+
+    .grow {
+        width: 100%;
+    }
+
+    .grow .bg,
+    .userSection .user {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .bg .bgImg img,
+    .flowing .flowingImg img,
+    .user .userImg img {
+        width: 450px;
+    }
+
+    .bg .bgText,
+    .flowing .flowingText,
+    .user .userText {
+        width: 460px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: unset;
+    }
+
+    .bgText p,
+    .flowingText p,
+    .userText p {
+        width: 440px;
+        padding: 0;
+        text-align: start;
+    }
+
+    .grow .bgTop {
+        background: url("./images/bg-section-top-desktop-1.svg") no-repeat center;
+        background-size: cover;
+        height: 240px;
+    }
+
+    .grow .bgBottom {
+        background: url("./images/bg-section-bottom-desktop-1.svg") no-repeat center;
+        background-size: cover;
+    }
+
+
+    .flowingSection .flowing {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .userSection {
+        width: 100%;
+    }
+
+    .userSection .userTop {
+        background: url("./images/bg-section-top-desktop-2.svg") no-repeat center bottom;
+        background-size: cover;
+        height: 250px;
+    }
+
+    .userSection .userBottom {
+        background: url("./images/bg-section-bottom-desktop-2.svg") no-repeat center top;
+        background-size: cover;
+        height: 250px;
+    }
+
+    .bottomSection .bottomBg {
+        background: url("./images/bg-footer-top-desktop.svg") no-repeat center bottom;
+        background-size: cover;
+        height: 250px;
+        width: 100%;
+    }
+
+    .content {
+        height:
+            /* 250 */
+            px;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .newsLetter form {
+        flex-direction: row;
+        align-items: unset;
+    }
+
+}
