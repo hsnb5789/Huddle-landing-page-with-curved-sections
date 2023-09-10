@@ -21,10 +21,6 @@
     box-sizing: border-box;
 }
 
-/* html {
-    background-color: var(--Very-Pale-Blue);
-} */
-
 body {
     display: flex;
     flex-direction: column;
@@ -114,7 +110,7 @@ main {
 /* Get started button */
 button.getStarted {
     min-width: 200px;
-    width: 320px;
+    max-width: 350px;
     height: 50px;
     border-radius: 30px;
     border: 1px solid var(--Light-Pink);
@@ -238,6 +234,7 @@ button.getStarted:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
+
     font-family: var(--Poppins);
 }
 
@@ -251,7 +248,7 @@ button.getStarted:hover {
 .flowingText p,
 .userText p {
     min-width: 320px;
-    max-width: 460px;
+    max-width: 470px;
     font-family: var(--Open_sans);
     font-weight: 600;
     font-size: 13px;
@@ -322,7 +319,8 @@ button.getStarted:hover {
 }
 
 .build button.getStarted {
-    width: 200px;
+    min-width: 200px;
+    max-width: 350px;
 }
 
 /* Bottom section */
@@ -468,6 +466,19 @@ button.getStarted:hover {
         width: 100%;
     }
 
+    .main h1 {
+        font-size: 50px;
+    }
+
+    .community h1,
+    .message h1 {
+        font-size: 70px;
+    }
+
+    button.getStarted {
+        width: 350px;
+    }
+
     .top-container {
         justify-content: space-around;
     }
@@ -479,6 +490,12 @@ button.getStarted:hover {
 
     .message h1 span {
         width: 100%;
+    }
+
+    .bg .bgText,
+    .flowing .flowingText,
+    .user .userText {
+        gap: 2rem;
     }
 
     .grow {
@@ -500,18 +517,29 @@ button.getStarted:hover {
     .bg .bgText,
     .flowing .flowingText,
     .user .userText {
-        width: 460px;
+        width: 470px;
         justify-content: flex-start;
         align-items: flex-start;
         text-align: unset;
     }
 
+    .bgText h3,
+    .flowingText h3,
+    .userText h3 {
+        font-size: 38px;
+    }
+
     .bgText p,
     .flowingText p,
     .userText p {
-        width: 440px;
+        width: 470px;
         padding: 0;
         text-align: start;
+        font-size: 14px;
+    }
+
+    .build h1 {
+        font-size: 3rem;
     }
 
     .grow .bgTop {
